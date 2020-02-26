@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mantra
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mantra
+  template:
+    metadata:
+      labels:
+        app: mantra
+        version: v0.15
+    spec:
+      containers:
+      - name: mantra
+        image: toolboc/mantra
+        ports:
+        - containerPort: 5777
+          name: mantra
+          protocol: TCP

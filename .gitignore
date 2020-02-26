@@ -1,52 +1,111 @@
-# C++ objects and libs
-*.slo
-*.lo
+*.tar.gz
+
+*.exe
+src/mantra
+src/mantrad
+src/mantra-cli
+src/mantra-tx
+src/test/test_mantra
+src/test/test_mantra_fuzzy
+src/qt/test/test_mantra-qt
+
+# autoreconf
+Makefile.in
+aclocal.m4
+autom4te.cache/
+build-aux/config.guess
+build-aux/config.sub
+build-aux/depcomp
+build-aux/install-sh
+build-aux/ltmain.sh
+build-aux/m4/libtool.m4
+build-aux/m4/lt~obsolete.m4
+build-aux/m4/ltoptions.m4
+build-aux/m4/ltsugar.m4
+build-aux/m4/ltversion.m4
+build-aux/missing
+build-aux/compile
+build-aux/test-driver
+config.log
+config.status
+configure
+libtool
+src/config/bitcoin-config.h
+src/config/bitcoin-config.h.in
+src/config/stamp-h1
+share/setup.nsi
+share/qt/Info.plist
+
+src/univalue/gen
+
+src/qt/*.moc
+src/qt/moc_*.cpp
+src/qt/forms/ui_*.h
+
+src/qt/test/moc*.cpp
+
+.deps
+.dirstamp
+.libs
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.pyc
 *.o
+*.o-*
+*.patch
 *.a
+*.pb.cc
+*.pb.h
+
+*.log
+*.trs
+*.dmg
+
+*.json.h
+*.raw.h
+
+#libtool object files
+*.lo
 *.la
-*.lai
-*.so
-*.so.*
-*.dll
-*.dylib
 
-# Qt-es
-object_script.*.Release
-object_script.*.Debug
-*_plugin_import.cpp
-/.qmake.cache
-/.qmake.stash
-*.pro.user
-*.pro.user.*
-*.qbs.user
-*.qbs.user.*
-*.moc
-moc_*.cpp
-moc_*.h
-qrc_*.cpp
-ui_*.h
-*.qmlc
-*.jsc
-Makefile*
-*build-*
+# Compilation and Qt preprocessor part
 *.qm
-*.prl
+Makefile
+mantra-qt
+mantra-Qt.app
 
-# Qt unit tests
-target_wrapper.*
+# Unit-tests
+Makefile.test
+mantra-qt_test
 
-# QtCreator
-*.autosave
+# Resources cpp
+qrc_*.cpp
 
-# QtCreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
+# Mac specific
+.DS_Store
+build
 
-# QtCreator CMake
-CMakeLists.txt.user*
+#lcov
+*.gcno
+*.gcda
+/*.info
+test_mantra.coverage/
+total.coverage/
+coverage_percent.txt
 
-# QtCreator 4.8< compilation database 
-compile_commands.json
+#build tests
+linux-coverage-build
+linux-build
+win32-build
+test/config.ini
+test/cache/*
 
-# QtCreator local machine specific files for imported projects
-*creator.user*
+!src/leveldb*/Makefile
+
+/doc/doxygen/
+
+libbitcoinconsensus.pc
+contrib/devtools/split-debug.sh
