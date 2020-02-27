@@ -1,4 +1,4 @@
-# Copyright (c) 2016 The Bitcoin Core developers
+y# Copyright (c) 2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/mantra-project/mantra
+url=https://github.com/BenCryptoKing/mantra
 proc=2
 mem=2000
 lxc=true
